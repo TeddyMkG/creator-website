@@ -1,0 +1,23 @@
+img{
+        width:50px;
+      }
+      .game-btn{
+        border-radius:90px;
+        background-color:black;
+        height: 120px;
+        width: 120px;
+        border: solid;
+         border-color: white;
+
+      }
+      .titlename{
+        font-family:Arial;
+        font-weight: bold;
+        font-size: 30px;
+        
+        
+      }
+      body{
+        color: white;
+        background-color:black;
+      }

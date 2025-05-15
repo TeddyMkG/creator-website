@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      ROCK PAPER SCISSORS
+    </title>
+    <link rel="stylesheet" href="rps.css">
+  </head>
+  <body>
+    <p class="titlename">Teddy's RPS</p>
+    <button class="game-btn" onclick="
+    gameResult('rock')
+     ">
+      <img id="Rock" src="images/rock-emoji.png">
+    </button>
+
+    <button  class="game-btn" onclick="
+    gameResult('paper')
+    ">
+      <img id="Paper" src="images/paper-emoji.png">
+    </button>
+
+    <button class="game-btn" onclick="
+    gameResult('scissors')
+
+     ">
+      <img id="Scissors" src="images/scissors-emoji.png"> 
+    </button>
+
+   
+    <div>THE FUCKING RESULT
+     <div class="div-1"  style="height: 50px;"></div>
+    </div>
+    <div>THE FUCKING MOVES
+     <div class="div-2" style="height: 50px; margin-bottom:10px;"></div>
+      
+    </div>
+    <div>THE FUCKING SCOREBOARD
+      <div class="div-3" style="height: 50px;"></div>
+    </div>
+
+    <button onclick="
+    scoreBoard.Draws = 0;
+    scoreBoard.Losses = 0;
+    scoreBoard.Wins = 0;
+    localStorage.removeItem('score')
+    scoreUpdates();
+    ">
+      RESET SCORE BOARD
+    </button>
+    <script src="rps.js"> </script>
+    
+  </body>
+</html>
